@@ -50,7 +50,9 @@ domains = [
     'the-village.ru',
     'www.bbcrussian.com',
     'bbcrussian.com',
-    'bestbuy.com'
+    'bestbuy.com',
+    'support.code42.com',
+    'code42.com'
 ]
 prefixes_base = ['193.0.6.150/32'] # stat.ripe.net
 prefixes = []
