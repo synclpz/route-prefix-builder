@@ -52,7 +52,9 @@ domains = [
     'bbcrussian.com',
     'bestbuy.com',
     'support.code42.com',
-    'code42.com'
+    'code42.com',
+    'emclient.com',
+    'www.emclient.com'
 ]
 prefixes_base = ['193.0.6.150/32'] # stat.ripe.net
 prefixes = []
