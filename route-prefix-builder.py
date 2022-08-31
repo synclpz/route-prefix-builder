@@ -54,7 +54,10 @@ domains = [
     'support.code42.com',
     'code42.com',
     'emclient.com',
-    'www.emclient.com'
+    'www.emclient.com',
+    'apt.releases.hashicorp.com',
+    'releases.hashicorp.com',
+    'hashicorp.com'    
 ]
 prefixes_base = ['193.0.6.150/32'] # stat.ripe.net
 prefixes = []
