@@ -16,7 +16,8 @@ asns = [
     'as53620',  # pinterest
     'as137437', # airbnb
     'as43996',  # booking
-    'as13443'   # linkedin
+    'as13443',  # linkedin
+    'as16509'   # amazon
     ]
 domains = [
     'illustrator-uroki.com',
@@ -55,9 +56,6 @@ domains = [
     'code42.com',
     'emclient.com',
     'www.emclient.com',
-    'apt.releases.hashicorp.com',
-    'releases.hashicorp.com',
-    'hashicorp.com'    
 ]
 prefixes_base = ['193.0.6.150/32'] # stat.ripe.net
 prefixes = []
