@@ -17,8 +17,24 @@ asns = [
     'as137437', # airbnb
     'as43996',  # booking
     'as13443',  # linkedin
+    'as55163',  # linkedin
+    'as40793',  # linkedin
+    'as30427',  # linkedin
+    'as20366',  # linkedin
+    'as202745',  # linkedin
+    'as20049',  # linkedin
+    'as197613',  # linkedin
+    'as14413',  # linkedin
+    'as137709',  # linkedin
+    'as132466',  # linkedin
+    'as8068',  # ms
+    'as8069',  # ms
+    'as8070',  # ms
+    'as8071',  # ms
+    'as8075',  # ms
     'as16509'   # amazon
     ]
+
 domains = [
     'illustrator-uroki.com',
     'www.behance.net',
