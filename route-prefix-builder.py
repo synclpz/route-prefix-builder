@@ -72,7 +72,8 @@ domains = [
     'code42.com',
     'emclient.com',
     'www.emclient.com',
-    'less.works'
+    'less.works',
+    'torproject.org'
 ]
 prefixes_base = ['193.0.6.150/32'] # stat.ripe.net
 prefixes = []
