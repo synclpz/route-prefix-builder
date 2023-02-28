@@ -9,30 +9,33 @@ res.timeout = 100
 res.lifetime = 100
 
 asns = [
-    'as32934',  # meta/facebook
-    'as15169',  # google
-    'as11917',  # whatsapp
-    'as13414',  # twitter
-    'as53620',  # pinterest
-    'as137437', # airbnb
-    'as43996',  # booking
-    'as13443',  # linkedin
-    'as55163',  # linkedin
-    'as40793',  # linkedin
-    'as30427',  # linkedin
-    'as20366',  # linkedin
-    'as202745',  # linkedin
-    'as20049',  # linkedin
-    'as197613',  # linkedin
-    'as14413',  # linkedin
-    'as137709',  # linkedin
-    'as132466',  # linkedin
-    'as8068',  # ms
-    'as8069',  # ms
-    'as8070',  # ms
-    'as8071',  # ms
-    'as8075',  # ms
-    'as16509'   # amazon
+    'as32934',    # meta/facebook
+    'as54115',    # meta/facebook
+    'as63293',    # meta/facebook
+    'as149642',   # meta/facebook
+    'as15169',    # google
+    'as11917',    # whatsapp
+    'as13414',    # twitter
+    'as53620',    # pinterest
+    'as137437',   # airbnb
+    'as43996',    # booking
+    'as13443',    # linkedin
+    'as55163',    # linkedin
+    'as40793',    # linkedin
+    'as30427',    # linkedin
+    'as20366',    # linkedin
+    'as202745',   # linkedin
+    'as20049',    # linkedin
+    'as197613',   # linkedin
+    'as14413',    # linkedin
+    'as137709',   # linkedin
+    'as132466',   # linkedin
+    'as8068',     # ms
+    'as8069',     # ms
+    'as8070',     # ms
+    'as8071',     # ms
+    'as8075',     # ms
+    'as16509'     # amazon
     ]
 
 domains = [
