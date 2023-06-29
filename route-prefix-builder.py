@@ -35,7 +35,8 @@ asns = [
     'as8070',     # ms
     'as8071',     # ms
     'as8075',     # ms
-    'as16509'     # amazon
+    'as16509',    # amazon
+    'as13335'     # cloudflare
     ]
 
 domains = [
