@@ -2,6 +2,7 @@ import requests, json, schedule, threading, time
 from dns import resolver
 from http.server import BaseHTTPRequestHandler
 from http.server import HTTPServer
+from aggregate_prefixes import aggregate_prefixes
 
 res = resolver.Resolver()
 res.nameservers = ['1.1.1.1', '8.8.8.8']
@@ -109,21 +110,27 @@ def init_prefixes():
 
 def append_prefix(p):
     global prefixes
-    if ':' not in p:
-        prefixes.append('/ip firewall address-list add list=VPN-PREFIX-LIST address=' + p)
-    else:
-        prefixes.append('/ipv6 firewall address-list add list=VPN-PREFIX-LIST address=' + p)
-       
+    prefixes.append('/ip firewall address-list add list=VPN-PREFIX-LIST address=' + str(p))
+
+def append_prefix6(p6):
+    global prefixes
+    prefixes.append('/ipv6 firewall address-list add list=VPN-PREFIX-LIST address=' + str(p6))
 
 def update():
+    global prefixes
     px = []
+    px6 = []
     px.append(*prefixes_base)
     for asn in asns:
         try:
             resp = requests.get('https://stat.ripe.net/data/announced-prefixes/data.json?resource=' + asn).text
             prefixes_retrieved = json.loads(resp)["data"]["prefixes"]
-            for p in prefixes_retrieved:
-                px.append(p["prefix"])
+            for pref in prefixes_retrieved:
+                p = pref["prefix"]
+                if ':' not in p:
+                    px.append(p)
+                else:
+                    px6.append(p)
         except:
             continue
     for d in domains:
@@ -135,8 +142,16 @@ def update():
             continue
     px = list(set(px))
     init_prefixes()
+    prefixes.append('# Total v4 collected: ' + str(len(px)))
+    prefixes.append('# Total v6 collected: ' + str(len(px6)))
+    px = list(aggregate_prefixes(px))
+    px6 = list(aggregate_prefixes(px6))
+    prefixes.append('# Aggregated v4: ' + str(len(px)))
+    prefixes.append('# Aggregated v6: ' + str(len(px6)))
     for p in px:
         append_prefix(p)
+    for p6 in px6:
+        append_prefix6(p6)
 
 def run_continuously(interval=1):
     cease_continuous_run = threading.Event()

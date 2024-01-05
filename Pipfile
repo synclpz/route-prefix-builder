@@ -7,6 +7,7 @@ name = "pypi"
 requests = "*"
 dnspython = "*"
 schedule = "*"
+aggregate-prefixes = "*"
 
 [dev-packages]
 
