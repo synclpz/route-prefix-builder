@@ -100,21 +100,7 @@ class HttpGetHandler(BaseHTTPRequestHandler):
         body = '\n'.join(prefixes).encode()
         self.send_header('Content-Length', str(len(body)))
         self.end_headers()
-        self.wfile.write(body)
-
-def init_prefixes():
-    global prefixes
-    prefixes = []
-    prefixes.append('/ip firewall address-list remove [/ip firewall address-list find list=VPN-PREFIX-LIST]')
-    prefixes.append('/ipv6 firewall address-list remove [/ipv6 firewall address-list find list=VPN-PREFIX-LIST]')
-
-def append_prefix(p):
-    global prefixes
-    prefixes.append('/ip firewall address-list add list=VPN-PREFIX-LIST address=' + str(p))
-
-def append_prefix6(p6):
-    global prefixes
-    prefixes.append('/ipv6 firewall address-list add list=VPN-PREFIX-LIST address=' + str(p6))
+        self.wfile.write(body)    
 
 def update():
     global prefixes
@@ -140,18 +126,19 @@ def update():
                 px.append(rdata.to_text() + "/32")
         except:
             continue
-    px = list(set(px))
-    init_prefixes()
+    prefixes = []
     prefixes.append('# Total v4 collected: ' + str(len(px)))
     prefixes.append('# Total v6 collected: ' + str(len(px6)))
     px = list(aggregate_prefixes(px))
     px6 = list(aggregate_prefixes(px6))
     prefixes.append('# Aggregated v4: ' + str(len(px)))
     prefixes.append('# Aggregated v6: ' + str(len(px6)))
+    prefixes.append('/ip firewall address-list remove [/ip firewall address-list find list=VPN-PREFIX-LIST]')
     for p in px:
-        append_prefix(p)
+        prefixes.append('/ip firewall address-list add list=VPN-PREFIX-LIST address=' + str(p))
+    prefixes.append('/ipv6 firewall address-list remove [/ipv6 firewall address-list find list=VPN-PREFIX-LIST]')
     for p6 in px6:
-        append_prefix6(p6)
+        prefixes.append('/ipv6 firewall address-list add list=VPN-PREFIX-LIST address=' + str(p6))
 
 def run_continuously(interval=1):
     cease_continuous_run = threading.Event()
