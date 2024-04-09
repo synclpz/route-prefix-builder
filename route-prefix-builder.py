@@ -81,7 +81,14 @@ domains = [
     'less.works',
     'torproject.org',
     'bridges.torproject.org',
-    'squareup.com'
+    'squareup.com',
+    'squarecloudservices.com',
+    'data-platform.squarecloudservices.com',
+    'capi.squareup.com',
+    'api.sprig.com',
+    'www.facebook.com',
+    'squarecdn.com',
+    'dashboard-production-f.squarecdn.com'
 ]
 prefixes_base = ['193.0.6.150/32'] # stat.ripe.net
 prefixes = []
