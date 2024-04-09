@@ -88,7 +88,8 @@ domains = [
     'api.sprig.com',
     'www.facebook.com',
     'squarecdn.com',
-    'dashboard-production-f.squarecdn.com'
+    'dashboard-production-f.squarecdn.com',
+    'squareup.map.fastly.net'
 ]
 prefixes_base = ['193.0.6.150/32'] # stat.ripe.net
 prefixes = []
