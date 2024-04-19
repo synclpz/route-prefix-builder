@@ -91,7 +91,8 @@ domains = [
     'dashboard-production-f.squarecdn.com',
     'squareup.map.fastly.net',
     'redis.io',
-    'ntc.party'
+    'ntc.party',
+    'vc.ru'
 ]
 prefixes_base = ['193.0.6.150/32'] # stat.ripe.net
 prefixes = []
