@@ -38,7 +38,8 @@ asns = [
     'as8071',     # ms
     'as8075',     # ms
     'as16509',    # amazon
-    'as13335'     # cloudflare
+    'as13335',    # cloudflare
+    'as51894'     # mikrotik
     ]
 
 domains = [
