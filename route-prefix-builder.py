@@ -39,8 +39,113 @@ asns = [
     'as8075',     # ms
     'as16509',    # amazon
     'as13335',    # cloudflare
-    'as51894'     # mikrotik
-    ]
+    'as51894',    # mikrotik
+    'as210329',   # kamatera
+    'as204548',   # kamatera
+    'as36007',    # kamatera
+    'as64022',    # kamatera
+    'as54913',    # kamatera
+    'as209242',   # cloudflare
+    'as19871',    # network solutions/hostgator
+    'as32475',    # singlehop/hostgator
+    'as13749',    # softlayer/hostgator
+    'as13884',    # softlayer/hostgator
+    'as21844',    # softlayer/hostgator
+    'as30315',    # softlayer/hostgator
+    'as35361',    # grepnet/hostgator
+    'as36351',    # softlayer/hostgator
+    'as36420',    # softlayer/hostgator
+    'as46606',    # unifiedlayer/hostgator
+    'as394695',   # pdr/hostgator
+    'as14441',    # network solutions
+    'as19871',    # network solutions
+    'as26347',    # dreamhost
+    'as14741',    # bluehost
+    'as29873',    # bluehost
+    'as30380',    # bluehost
+    'as32392',    # bluehost
+    'as36066',    # bluehost
+    'as8560',     # ionos
+    'as51862',    # ionos
+    'as54548',    # ionos?
+    'as14061',    # digitalocean
+    'as62567',    # digitalocean
+    'as200130',   # digiatlocean
+    'as201229',   # digitalocean
+    'as202018',   # digitalocean
+    'as202109',   # digitalocean
+    'as393406',   # digitalocean
+    'as394362',   # digitalocean
+    'as699',      # amazon
+    'as801',      # amazon
+    'as7224',     # amazon
+    'as8987',     # amazon
+    'as9059',     # amazon
+    'as10124'     # amazon
+    'as10291',    # amazon
+    'as14618',    # amazon
+    'as16509',    # amazon
+    'as17493',    # amazon
+    'as19047',    # amazon
+    'as21664',    # amazon
+    'as36263',    # amazon
+    'as38895',    # amazon
+    'as39111',    # amazon
+    'as40045',    # amazon
+    'as58588',    # amazon
+    'as62785',    # amazon
+    'as135630',   # amazon
+    'as395343',   # amazon
+    'as399834',   # amazon
+    'as399991',   # amazon
+    'as400098',   # amazon
+    'as16892',    # godaddy
+    'as26496',    # godaddy
+    'as30083',    # godaddy
+    'as31815',    # godaddy
+    'as133882',   # godaddy
+    'as397513',   # godaddy
+    'as397514',   # godaddy
+    'as397515',   # godaddy
+    'as397516',   # godaddy
+    'as397517',   # godaddy
+    'as397518',   # godaddy
+    'as397519',   # godaddy
+    'as397520',   # godaddy
+    'as397521',   # godaddy
+    'as397522',   # godaddy
+    'as398101',   # godaddy
+    'as398102',   # godaddy
+    'as398103',   # godaddy
+    'as398104',   # godaddy
+    'as398105',   # godaddy
+    'as398106',   # godaddy
+    'as398107',   # godaddy
+    'as398108',   # godaddy
+    'as398109',   # godaddy
+    'as398110',   # godaddy
+    'as398785',   # godaddy
+    'as398786',   # godaddy
+    'as398787',   # godaddy
+    'as398788',   # godaddy
+    'as398789',   # godaddy
+    'as398790',   # godaddy
+    'as398791',   # godaddy
+    'as398792',   # godaddy
+    'as398793',   # godaddy
+    'as398794',   # godaddy
+    'as400746',   # godaddy
+    'as400747',   # godaddy
+    'as400748',   # godaddy
+    'as400749',   # godaddy
+    'as400750',   # godaddy
+    'as400751',   # godaddy
+    'as400752',   # godaddy
+    'as400753',   # godaddy
+    'as400754',   # godaddy
+    'as400755',   # godaddy
+    'as63949'     # akamai/linode/fastcomet
+]
 
 domains = [
     'illustrator-uroki.com',
