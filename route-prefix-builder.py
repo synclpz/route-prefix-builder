@@ -144,7 +144,8 @@ asns = [
     'as400753',   # godaddy
     'as400754',   # godaddy
     'as400755',   # godaddy
-    'as63949'     # akamai/linode/fastcomet
+    'as63949',    # akamai/linode/fastcomet
+    'as54113'     # fastly
 ]
 
 domains = [
