@@ -199,7 +199,9 @@ domains = [
     'squareup.map.fastly.net',
     'redis.io',
     'ntc.party',
-    'vc.ru'
+    'vc.ru',
+    'reddit.com',
+    'redgifs.com'
 ]
 prefixes_base = ['193.0.6.150/32'] # stat.ripe.net
 prefixes = []
