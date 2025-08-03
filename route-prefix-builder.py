@@ -202,7 +202,8 @@ domains = [
     'vc.ru',
     'reddit.com',
     'redgifs.com',
-    'nnm-club-me.ru'
+    'nnm-club-me.ru',
+    'media.redgifs.com'
 ]
 prefixes_base = ['193.0.6.150/32'] # stat.ripe.net
 prefixes = []
