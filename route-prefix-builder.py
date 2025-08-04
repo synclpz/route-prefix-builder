@@ -203,7 +203,9 @@ domains = [
     'reddit.com',
     'redgifs.com',
     'nnm-club-me.ru',
-    'media.redgifs.com'
+    'media.redgifs.com',
+    'evisa.imigrasi.go.id',
+    'imigrasi.go.id'
 ]
 prefixes_base = ['193.0.6.150/32'] # stat.ripe.net
 prefixes = []
